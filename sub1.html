@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <script src="jquery-3.3.1.min.js"></script>
+   <script src="script.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div id="wrap">
+      <header>
+        <div id="headerbg">
+<!--        .align>(#pc-hd>#logo+nav+#search)+#tb-hd-->
+           <div class="align">
+           <div id="pc-hd">
+              <div id="logo">
+<!--                 a[#]>img-->
+                 <a href="index.html"><img src="img/logo.png" alt="상단 로고"></a>
+              </div>
+              <nav>
+<!--                 div*5>a[#]+ul.sub>li>a[#]-->
+                 <div>
+                    <a href="sub1.html">Brand</a>
+                    <ul class="sub">
+                       <li><a href="sub1.html">about</a></li>
+                       <li><a href="#">customizing</a></li>
+                       <li><a href="#">class</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <a href="#">Wallet</a>
+                    <ul class="sub">
+                       <li><a href="#">large</a></li>
+                       <li><a href="#">medium</a></li>
+                       <li><a href="#">small</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <a href="#">Bags</a>
+                    <ul class="sub">
+                       <li><a href="#">backpack</a></li>
+                       <li><a href="#">cross</a></li>
+                       <li><a href="#">tote</a></li>
+                       <li><a href="#">boston</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <a href="#">Acc</a>
+                    <ul class="sub">
+                       <li><a href="#">keyholder</a></li>
+                       <li><a href="#">strap</a></li>
+                       <li><a href="#">tassel</a></li>
+                       <li><a href="#">bookmarker</a></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <a href="#">Community</a>
+                    <ul class="sub">
+                       <li><a href="#">notice</a></li>
+                       <li><a href="#">1:1 qna</a></li>
+                       <li><a href="#">gallery</a></li>
+                       <li><a href="#">map</a></li>
+                    </ul>
+                 </div>
+              </nav>
+              <div id="search">
+<!--                 input+button-->
+                 <input type="text" placeholder="search">
+                 <button>
+                    <img src="img/search.png" alt="검색어 버튼 이미지">
+                 </button>
+              </div>
+           </div>
+           <div id="tb-hd">
+<!--              #tblogo+span+#tbmenu>button+ul-->
+              <div id="tblogo">
+                 <a href="index.html"></a>
+                    <img src="img/logo.png" alt="태블릿용 로고">
+              </div>
+              <span></span>
+              <div id="tbmenu">
+                 <button>X</button>
+                 <ul>
+<!--
+                    li*5>a[#]
+                    ㄴ태블릿용 메뉴로, 서브메뉴 생략 메인메뉴만을 작성
+-->
+                    <li><a href="sub1.html">Brand</a></li>
+                    <li><a href="#">Wallet</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Acc</a></li>
+                    <li><a href="#">Community</a></li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+        </div>
+     </header>
+     
+      <footer>
+        <div class="align">
+<!--           #flogo+address-->
+           <div id="flogo">
+<!--              a[#]>img-->
+              <a href="index.html"><img src="img/logoh.png" alt=""></a>
+           </div>
+           <address>상호명 : 이든공방대표자 : 하호주개인정보보호책임관리자 : 하호주<br>
+            주소 : 대구광역시 수성구 지산로3길 112-4, 1층 상가호(지산동, 천가지 꿈)<br>
+            전화번호 : 010-6540-5211E-mail : edunleather@naver.com<br>
+            통신판매업신고번호 : 제 2018-대구수성구-0665 호사업자등록번호 : 611-39-00284</address>
+        </div>
+     </footer>
+   </div>
+   
+</body>
+</html>

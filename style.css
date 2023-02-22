@@ -1,0 +1,430 @@
+@charset "utf-8";
+@font-face{font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');font-weight: normal;font-style: normal;}
+
+*{padding: 0; margin: 0;}
+html,body{
+   font-size: 12px;
+   font-family: 'RIDIBatang';
+   color: #222;
+}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none;
+  color: inherit;}
+img{vertical-align: bottom;}
+address{font-style: normal;}
+table{border-collapse: collapse;}
+button,input{
+   border: none;
+   background: transparent;
+   font-size: 100%;
+   font-family: 'RIDIBatang';
+}
+
+#wrap{width: 100%;}
+.align{
+   max-width: 1300px;
+   margin: auto;
+}
+
+header{
+   overflow: hidden;
+   position: relative;
+   height: 102px;
+   position: fixed;
+   z-index: 999;
+   width: 100%;
+}
+#headerbg{
+   background: rgba(0, 0, 0, 0.74);
+}
+#pc-hd{
+   padding: 0.5rem 0;
+}
+#pc-hd::after{
+   display: block;
+   content: '';
+   clear: both;
+}
+
+
+#logo{
+   float: left;
+   width: 13%;
+}
+#logo a{}
+#logo a img{}
+
+nav{
+   float: left;
+   width: 74%;
+}
+nav div{
+   color: #fff;
+   width: 20%;
+   float: left;
+   text-align: center;
+}
+nav div>a{
+   display: block;
+   font-size: 1.4rem;
+   line-height: 60px;
+}
+nav div .sub{
+   display: none;
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 72px;
+   background: rgba(0, 0, 0, 0.79);
+}
+/*서브메뉴들의 내용 시작지점 각각 다르게 설정*/
+nav div:nth-child(1) .sub{
+   padding-left: 40rem;
+}
+nav div:nth-child(2) .sub{
+   padding-left: 50rem;
+}
+nav div:nth-child(3) .sub{
+   padding-left: 70rem;
+}
+nav div:nth-child(4) .sub{
+   padding-left: 80rem;
+}
+nav div:nth-child(5) .sub{
+   padding-left: 90rem;
+}
+nav div .sub li{
+   float: left;
+   width: 150px;
+}
+nav div .sub li a{
+   display: block;
+   font-size: 1.3rem;
+   line-height: 30px;
+}
+
+#search{
+   float: right;
+   width: 13%;
+   position: relative;
+   padding-left: 3rem;
+   box-sizing: border-box;
+}
+#search input{
+   background: rgba(255, 255, 255, 0.86);
+   height: 30px;
+   border-radius: 20px;
+   width: 100%;
+   margin-top: 1.2rem;
+}
+#search input::placeholder{
+   padding-left: 1rem;
+   font-size: 1.1rem;
+   color :#000;
+}
+#search button{
+   position: absolute;
+   right: 10px;
+   top: 13px;
+}
+
+/*태블릿 버전 헤더*/
+#tb-hd{
+   padding: 0.5rem;
+   display: none;
+}
+#tblogo{
+   text-align: center;
+}
+
+#tblogo a{}
+#tblogo a img{}
+
+#tb-hd span{
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: #fff;
+   position: absolute;
+   right: 30px;
+   top: 25px;
+   animation: tbmenubtn 1s infinite;
+   animation-direction: alternate;
+   cursor: pointer;
+}
+
+@keyframes tbmenubtn{
+   100%{opacity: 0.3;}
+}
+
+#tbmenu{
+   position: fixed;
+   background: rgba(0, 0, 0, 0.71);
+   color: #fff;
+   top: 0;bottom: 0;
+   left: 0; right: 0;
+   display: none;
+}
+#tbmenu button{
+   color: #fff;
+   border: 1px solid;
+   padding: 1rem 1.2rem;
+   font-size: 1.3rem;
+   border-radius: 15px;
+   position: absolute;
+   right: 10%;
+   top: 10%;
+}
+#tbmenu button:hover{
+   background: rgba(167, 167, 167, 0.59);
+}
+#tbmenu ul{
+   margin: 25rem 20rem;
+}
+#tbmenu ul li:hover{
+   text-decoration: line-through;
+   font-style: italic;
+}
+#tbmenu ul li a{
+   display: block;
+   font-size: 2rem;
+   line-height: 60px;
+}
+
+
+main{}
+
+section{
+   padding: 5rem 0 0;
+}
+
+#con1{
+   overflow: hidden;
+}
+
+.c1textbox{
+   float: left;
+   width: 40%;
+   text-align: center;
+   padding: 4.8rem 0;
+}
+.c1textbox h3{
+   font-size: 2.7rem;
+}
+.c1textbox span{
+   display: inline-block;
+   width: 50px;
+   margin: 3rem 0;
+   border-bottom: 2px solid;
+}
+.c1textbox p{
+   font-size: 1.4rem;
+   line-height: 1.5;
+}
+
+.c1introbox{
+   float: left;
+   width: 60%;
+   position: relative;
+   overflow: hidden;
+}
+.c1introbox .ctimg{
+   overflow: hidden;
+}
+.c1introbox .ctimg img{
+   width: 100%;
+   transition: 0.5s;
+}
+.c1introbox .cttext{
+   position: absolute;
+   background: rgba(0, 0, 0, 0.62);
+   color: #fff;
+   width: 100%;
+   top: 275px;
+   bottom: 0;
+   text-align: center;
+   transition: 0.5s
+}
+.c1introbox .cttext img{
+   width: 30px;
+   margin: 1.5rem;
+   transition: 0.5s;
+}
+.c1introbox .cttext h4{
+   font-weight: normal;
+   font-size: 1.4rem;
+   
+}
+.c1introbox .cttext h2{
+   font-size: 2.7rem;
+   font-weight: normal;
+}
+.c1introbox .cttext span{
+   display: block;
+   width: 1px;
+   height: 50px;
+   background: #fff;
+   margin: 1rem auto;
+}
+.c1introbox .cttext p{
+   font-size: 1.3rem;
+}
+.c1introbox .cttext a{
+   border: 1px solid #fff;
+   font-size: 1.3rem;
+   padding: 1rem;
+   display: inline-block;
+   margin-top: 2rem;
+}
+
+.c1introbox:hover .cttext{
+   top: -50px;
+}
+.c1introbox:hover .cttext img{
+   opacity: 0;
+}
+.c1introbox:hover .ctimg img{
+   transform: scale(1.1);
+}
+
+#con2{
+   padding: 4rem 0;
+}
+
+.category{
+   text-align: center;
+}
+.category h3{
+   font-size: 2rem;
+   margin-bottom: 2rem;
+}
+
+.hislide{
+   overflow: hidden;
+}
+.hislide li{
+   float: left;
+   width: 360px;
+   text-align: center;
+}
+.hislide li a{
+   display:block;
+}
+.hislide li a img{
+   width: 100%;
+}
+.hislide li a span{
+   display:block;
+}
+.hislide li a .histext1{
+   font-size: 1.7rem;
+   font-weight: bold;
+   margin: 1rem 0 0.5rem;
+}
+.hislide li a .histext2{
+   font-size: 1.2rem;
+   color: #555;
+}
+.hislide li a .histext3{
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-top: 1rem;
+   display: inline-block;
+}
+.histext3::after{
+   content: '';
+   display: block;
+   border-bottom: 10px solid #ffa064;
+   margin-top: -1rem;
+   width: 0;
+   transition: 0.5s;
+}
+.hislide li:hover .histext3::after{
+   width: 100%;
+}
+
+.morecover{
+   margin-top: 5rem;
+   text-align: center;
+}
+.morecover a{
+   display: inline-block;
+   border: 1px solid #000;
+   padding: 1rem 2rem;
+   font-size: 1.5rem;
+}
+
+#con3{
+   background: url(img/bannerbg.png);
+   width: 100%;
+   height: 480px;
+   color: #fff;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 12rem 0;
+}
+#con3 h3{
+   font-size: 4rem;
+   font-weight: normal;
+   letter-spacing: 20px;
+}
+#con3 p{
+   font-size: 1.5rem;
+   margin: 1rem 0 3rem;
+}
+#con3 a{
+   display: inline-block;
+   border: 1px solid #fff;
+   font-size: 1.3rem;
+   padding: 1rem 2rem;
+   letter-spacing: 1px;
+}
+
+footer{
+   background: #000;
+   color: #fff;
+   overflow: hidden;
+   padding: 3rem 0;
+   border-top: 1px solid #ccc;
+}
+footer .align{
+   width: 800px;
+}
+footer #flogo{
+   float: left;
+}
+footer address{
+   float: left;
+   color: #999;
+   font-size: 0.9rem;
+   margin-left: 5rem;
+}
+
+/*미디어쿼리 - 태블릿 버전 768px*/
+
+@media all and (max-width:768px){
+   
+   #pc-hd{display: none;}
+   #tb-hd{display: block;}
+   
+   .c1textbox,.c1introbox{
+      float: none;
+      width: 100%;
+   }
+   .c1textbox{
+      padding-top: 0;
+   }
+   .c1introbox .cttext{
+      top: 260px;
+   }
+   
+   #con3 p{
+      font-size: 1.3rem;
+   }
+   footer .align{
+      padding-left: 1rem;
+   }
+   
+}
