@@ -3,24 +3,24 @@
 <head>
    <meta charset="UTF-8">
    <title>Document</title>
-   <script src="jquery-3.3.1.min.js"></script>
-   <script src="script.js"></script>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="sub.css">
+   <link rel="stylesheet" href="media.css">
+
+   <script src="jquery-3.3.1.min.js"></script>
+   <script src="sub.js"></script>
 </head>
 <body>
    
    <div id="wrap">
       <header>
         <div id="headerbg">
-<!--        .align>(#pc-hd>#logo+nav+#search)+#tb-hd-->
            <div class="align">
            <div id="pc-hd">
               <div id="logo">
-<!--                 a[#]>img-->
                  <a href="index.html"><img src="img/logo.png" alt="상단 로고"></a>
               </div>
               <nav>
-<!--                 div*5>a[#]+ul.sub>li>a[#]-->
                  <div>
                     <a href="sub1.html">Brand</a>
                     <ul class="sub">
@@ -66,7 +66,6 @@
                  </div>
               </nav>
               <div id="search">
-<!--                 input+button-->
                  <input type="text" placeholder="search">
                  <button>
                     <img src="img/search.png" alt="검색어 버튼 이미지">
@@ -74,7 +73,6 @@
               </div>
            </div>
            <div id="tb-hd">
-<!--              #tblogo+span+#tbmenu>button+ul-->
               <div id="tblogo">
                  <a href="index.html"></a>
                     <img src="img/logo.png" alt="태블릿용 로고">
@@ -83,10 +81,6 @@
               <div id="tbmenu">
                  <button>X</button>
                  <ul>
-<!--
-                    li*5>a[#]
-                    ㄴ태블릿용 메뉴로, 서브메뉴 생략 메인메뉴만을 작성
--->
                     <li><a href="sub1.html">Brand</a></li>
                     <li><a href="#">Wallet</a></li>
                     <li><a href="#">Bags</a></li>
@@ -97,13 +91,116 @@
            </div>
         </div>
         </div>
-     </header>
-     
+      </header>
+      <section style="margin-top: 100px;">
+         <div class="align">
+            <h2>Wallet</h2>
+            <ul class="wallet">
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-1.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-2.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-3.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-4.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-5.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-6.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-7.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-8.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <img src="./img/sub-item-9.jpeg" alt="">
+                     <div class="txt-box">
+                        <div>천연가죽 여권 슬리브</div>
+                        <div>Passport Sleeve</div>
+                        <span></span>
+                        <p>KRW 69,000</p>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
       <footer>
         <div class="align">
-<!--           #flogo+address-->
            <div id="flogo">
-<!--              a[#]>img-->
               <a href="index.html"><img src="img/logoh.png" alt=""></a>
            </div>
            <address>상호명 : 이든공방대표자 : 하호주개인정보보호책임관리자 : 하호주<br>
@@ -111,7 +208,7 @@
             전화번호 : 010-6540-5211E-mail : edunleather@naver.com<br>
             통신판매업신고번호 : 제 2018-대구수성구-0665 호사업자등록번호 : 611-39-00284</address>
         </div>
-     </footer>
+      </footer>
    </div>
    
 </body>

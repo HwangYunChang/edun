@@ -32,6 +32,7 @@ header{
    position: relative;
    height: 102px;
    position: fixed;
+   top: 0;
    z-index: 999;
    width: 100%;
 }
@@ -402,29 +403,3 @@ footer address{
    margin-left: 5rem;
 }
 
-/*미디어쿼리 - 태블릿 버전 768px*/
-
-@media all and (max-width:768px){
-   
-   #pc-hd{display: none;}
-   #tb-hd{display: block;}
-   
-   .c1textbox,.c1introbox{
-      float: none;
-      width: 100%;
-   }
-   .c1textbox{
-      padding-top: 0;
-   }
-   .c1introbox .cttext{
-      top: 260px;
-   }
-   
-   #con3 p{
-      font-size: 1.3rem;
-   }
-   footer .align{
-      padding-left: 1rem;
-   }
-   
-}
